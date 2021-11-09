@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="Cloud Resume.css">
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<div class="Home">
+    <body1>
+
+        <h1>Anthony McLaughlin</h1>
+        
+        <p id="TextScroll"></p>
+        
+        <script>
+        var i = 0;
+        var txt = 'Operations Analyst, passionate about Cloud, Coding and all things technical.';
+        var speed = 50;
+        
+        function type() {
+          if (i < txt.length) {
+            document.getElementById("TextScroll").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(type, speed);
+          }
+        } 
+        window.onload = type();
+        </script>
+        
+        </body1>
+
+</div>
+
+
+
+<div class="sidenav">
+  <a href="https://cloudresume-ajm.s3.eu-west-2.amazonaws.com/Index.html">Home</a>
+  <a href="https://cloudresume-ajm.s3.eu-west-2.amazonaws.com/Cloud+Resume+-+Profile.html">Profile</a>
+  <a href="https://cloudresume-ajm.s3.eu-west-2.amazonaws.com/Cloud+Resume+-+Education+%26+Certs.html">Education & Certs</a>
+  <a href="https://cloudresume-ajm.s3.eu-west-2.amazonaws.com/Cloud+Resume+-+Contact.html">Contact</a>
+  <a href="https://cloudresume-ajm.s3.eu-west-2.amazonaws.com/Cloud+Resume+-+About+me.html">About me</a>
+</div>
