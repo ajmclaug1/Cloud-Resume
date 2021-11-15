@@ -65,3 +65,18 @@ padding: 0px 10px;
     font-size: 14px; /* Increased text to enable scrolling */
     padding: 0px 10px;
     }
+
+
+.ProPic {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        top: 20px;
+        float:left
+      }
+.floated{
+        float:none;
+        width: 800px;
+    }
