@@ -10,6 +10,9 @@
         <h1>Anthony McLaughlin</h1>
         
         <p id="TextScroll"></p>
+
+        <p id="Vistor number"></p>
+
         
         <script>
         var i = 0;
@@ -24,6 +27,15 @@
           }
         } 
         window.onload = type();
+        async function load() {
+            let url = 'https://60ans0ry6k.execute-api.eu-west-2.amazonaws.com/test';
+            let obj = await (await fetch(url)).json();
+            console.log(obj);
+        }
+
+        load();
+        
+        document.getElementById("Vistor number").innerHTML = "Number of Vistors";
 
 
         </script>
