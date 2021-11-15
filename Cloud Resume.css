@@ -45,7 +45,13 @@ text-decoration: none;
 font-size: 25px;
 color: #818181;
 display: block;
-}
+
+} img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+   }
     
 .sidenav a:hover {
 color: #f1f1f1;
@@ -79,7 +85,4 @@ padding: 0px 10px;
         margin-left: 160px; /* Same as the width of the sidenav */
         margin-right: 40px;
     }
-    img {
-        float:right;
-        margin-right:5px;
-       }
+    
