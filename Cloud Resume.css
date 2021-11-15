@@ -66,17 +66,20 @@ padding: 0px 10px;
     padding: 0px 10px;
     }
 
+.main_About {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        font-size: 14px; /* Increased text to enable scrolling */
+        padding: 0px 0px;
+        }
 
-.ProPic {
-        height: 200px;
-        width: 200px;
-        position: absolute;
-        right: 0px;
-        bottom: 0px;
-        top: 20px;
-        float:left
-      }
+
+
 .floated{
         float:none;
-        width: 800px;
+        margin-left: 160px; /* Same as the width of the sidenav */
+        margin-right: 40px;
     }
+    img {
+        float:right;
+        margin-right:5px;
+       }
