@@ -9,11 +9,7 @@ h2
     color: #212529;;
     font-size: 30px
 }
-h3 
-{ 
-    color: #212529;;
-    font-size: 30px
-}
+
 body
 {
     color:grey;
@@ -24,8 +20,6 @@ body1
     text-align: center;
     font-size: 30px
 }
-/*  body {background-color: grey;
-        opacity: 0.9;} */
 
 .sidenav {
 height: 100%;
@@ -47,6 +41,11 @@ color: #818181;
 display: block;
 
 } 
+
+.sidenav a:hover {
+    color: #f1f1f1;
+    }
+
 .Sidebar {
     display: block;
     margin-left: auto;
@@ -54,18 +53,6 @@ display: block;
     border-radius: 50%;
    }
     
-.sidenav a:hover {
-color: #f1f1f1;
-}
-
-
-
-.main {
-margin-left: 160px; /* Same as the width of the sidenav */
-font-size: 14px; /* Increased text to enable scrolling */
-padding: 0px 10px;
-}
-
 .Home {
     text-align: center;
     margin-left: 160px; /* Same as the width of the sidenav */
@@ -73,25 +60,20 @@ padding: 0px 10px;
     padding: 0px 10px;
     }
 
-.main_About {
-        margin-left: 160px; /* Same as the width of the sidenav */
-        font-size: 14px; /* Increased text to enable scrolling */
-        padding: 0px 0px;
-        }
 
-
-
-.floated{
+.main {
         float:none;
         margin-left: 160px; /* Same as the width of the sidenav */
         margin-right: 40px;
-    }
+}
 
-.main_Contact {
-        margin-left: 160px; /* Same as the width of the sidenav */
-        font-size: 14px; /* Increased text to enable scrolling */
-        padding: 0px 0px;
+
+.main_Keyskills {
+         
+    margin: -20px;
+    padding: 0px;
         }
+
 .Icons {
             vertical-align:middle;
             margin-left: 10px; /* Same as the width of the sidenav */
