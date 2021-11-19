@@ -14,7 +14,7 @@
         <body1>
         <p id="TextScroll"></p>
 
-        <p id="Vistor number"></p>
+        <p id="Vistor_number"></p>
 
         
         <script>
@@ -25,12 +25,12 @@
         function type() {
           if (i < txt.length) {
             document.getElementById("TextScroll").innerHTML += txt.charAt(i);
-            i++;
+            
             setTimeout(type, speed);
-          }
+          }i++;
           if (i == 76) {$.getJSON('https://1ukkr517z1.execute-api.eu-west-2.amazonaws.com/GetVistor', function(data) {
           console.log(data)
-          document.getElementById("Vistor number").innerHTML = "Number of Vistors :" + data;
+          document.getElementById("Vistor_number").innerHTML = "Number of Vistors :" + data;
         });}
         } 
         window.onload = type()        
