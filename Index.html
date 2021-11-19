@@ -4,6 +4,7 @@
   <title>Home</title>
   <meta charset="UTF-8">
   <link rel="icon" type = "image/png" href = "Pictures/AM.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <div class="Home">
@@ -30,8 +31,13 @@
         } 
         window.onload = type();
 
-        document.getElementById("Vistor number").innerHTML = "Number of Vistors :";
-        
+        //document.getElementById("Vistor number").innerHTML = "Number of Vistors :";
+         
+
+        $.getJSON('https://1ukkr517z1.execute-api.eu-west-2.amazonaws.com/GetVistor', function(data) {
+          console.log(data)
+          document.getElementById("Vistor number").innerHTML = "Number of Vistors :" + data;
+        });
 
 
         </script>
