@@ -10,7 +10,7 @@
 <div class="Home">
     
 
-        <h1>Anthony McLaughlin</h1>
+        <h1>Anthony James McLaughlin</h1>
         <body1>
         <p id="TextScroll"></p>
 
@@ -28,18 +28,13 @@
             i++;
             setTimeout(type, speed);
           }
-        } 
-        window.onload = type();
-
-        //document.getElementById("Vistor number").innerHTML = "Number of Vistors :";
-         
-
-        $.getJSON('https://1ukkr517z1.execute-api.eu-west-2.amazonaws.com/GetVistor', function(data) {
+          if (i == 76) {$.getJSON('https://1ukkr517z1.execute-api.eu-west-2.amazonaws.com/GetVistor', function(data) {
           console.log(data)
           document.getElementById("Vistor number").innerHTML = "Number of Vistors :" + data;
-        });
-
-
+        });}
+        } 
+        window.onload = type()        
+        
         </script>
         </body1>
 </div>
