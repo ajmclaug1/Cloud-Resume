@@ -30,9 +30,18 @@
           }i++;
           if (i == 76) {$.getJSON('https://1ukkr517z1.execute-api.eu-west-2.amazonaws.com/GetVistor', function(data) {
           console.log(data)
-          document.getElementById("Vistor_number").innerHTML = "Number of Vistors :" + data;
-        });}
-        } 
+          j = 0
+          txt1 = "Number of Vistors : " + data
+          function type1() {
+          if (j < txt1.length) {
+            document.getElementById("Vistor_number").innerHTML += txt1.charAt(j);
+            j++;
+            setTimeout(type1, speed);
+          };
+        };
+        type1()}
+        );}
+        }; 
         window.onload = type()        
         
         </script>
