@@ -20,7 +20,7 @@
         <script>
         var i = 0;
         var txt = 'Operations Analyst, passionate about Cloud, Coding and all things technical.';
-        var speed = 50;
+        var speed = 35;
         
         function type() {
           if (i < txt.length) {
@@ -30,6 +30,7 @@
           }i++;
           if (i == 76) {$.getJSON('https://1ukkr517z1.execute-api.eu-west-2.amazonaws.com/GetVistor', function(data) {
           console.log(data)
+          type()
           j = 0
           txt1 = "Number of Vistors : " + data
           function type1() {
