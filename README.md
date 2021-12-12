@@ -1,5 +1,5 @@
 # Cloud Resume
-Overview
+Overview:
 This is the repository for my website inspired by https://cloudresumechallenge.dev/
 
 If you would like a more detailed explanation of how I achived it, please see my blog post.
